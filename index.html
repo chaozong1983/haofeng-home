@@ -313,9 +313,14 @@ img { max-width: 100%; display: block; }
 }
 .product-card:hover { transform: translateY(-4px); box-shadow: 0 8px 30px rgba(0,0,0,.1); }
 .product-card-img {
-  height: 200px; background: var(--wood-bg);
-  display: flex; align-items: center; justify-content: center;
-  color: var(--text-light); font-size: .85rem;
+  height: 200px; overflow: hidden;
+}
+.product-card-img img {
+  width: 100%; height: 100%; object-fit: cover;
+  transition: transform .4s;
+}
+.product-card:hover .product-card-img img {
+  transform: scale(1.05);
 }
 .product-card-body { padding: 20px; }
 .product-card-body h4 {
@@ -530,42 +535,42 @@ img { max-width: 100%; display: block; }
     <p class="section-intro">好风家居提供全屋定制全品类产品，涵盖卧室、客厅、书房、厨房等空间，支持个性化定制设计。</p>
     <div class="products-grid">
       <div class="product-card">
-        <div class="product-card-img">衣柜系统 · 案例实拍</div>
+        <div class="product-card-img"><img src="images/1-wardrobe.jpg" alt="卧室衣柜定制案例 - 好风家居实拍"></div>
         <div class="product-card-body">
           <h4>卧室衣柜定制</h4>
           <p>平开门/推拉门/步入式衣帽间，合理分区收纳，多功能内部结构设计，满足不同户型需求。</p>
         </div>
       </div>
       <div class="product-card">
-        <div class="product-card-img">电视柜系统 · 案例实拍</div>
+        <div class="product-card-img"><img src="images/2-tv-cabinet.jpg" alt="客厅电视柜定制案例 - 好风家居实拍"></div>
         <div class="product-card-body">
           <h4>客厅电视柜定制</h4>
           <p>简约/轻奢/现代风多风格可选，兼顾收纳与展示功能，嵌入式设计更省空间。</p>
         </div>
       </div>
       <div class="product-card">
-        <div class="product-card-img">书房系统 · 案例实拍</div>
+        <div class="product-card-img"><img src="images/3-bookcase.jpg" alt="书房书柜定制案例 - 好风家居实拍"></div>
         <div class="product-card-body">
           <h4>书房 &amp; 书柜定制</h4>
           <p>书桌+书柜一体化设计，合理利用转角空间，打造安静舒适的家庭办公学习环境。</p>
         </div>
       </div>
       <div class="product-card">
-        <div class="product-card-img">榻榻米系统 · 案例实拍</div>
+        <div class="product-card-img"><img src="images/4-tatami.jpg" alt="榻榻米多功能房案例 - 好风家居实拍"></div>
         <div class="product-card-body">
           <h4>榻榻米 &amp; 多功能房</h4>
           <p>集收纳、休息、娱乐于一体，小空间大利用，特别适合儿童房和多功能客房。</p>
         </div>
       </div>
       <div class="product-card">
-        <div class="product-card-img">橱柜系统 · 案例实拍</div>
+        <div class="product-card-img"><img src="images/5-kitchen.jpg" alt="厨房橱柜定制案例 - 好风家居实拍"></div>
         <div class="product-card-body">
           <h4>厨房橱柜定制</h4>
           <p>科学动线规划，防潮耐磨板材，合理收纳设计，打造好用又好看的厨房空间。</p>
         </div>
       </div>
       <div class="product-card">
-        <div class="product-card-img">玄关/阳台柜 · 案例实拍</div>
+        <div class="product-card-img"><img src="images/6-entryway.jpg" alt="玄关阳台柜定制案例 - 好风家居实拍"></div>
         <div class="product-card-body">
           <h4>玄关柜 &amp; 阳台柜</h4>
           <p>入户收纳解决方案，鞋柜+挂衣区+换鞋凳一体化；阳台柜兼顾家政收纳与美观。</p>
