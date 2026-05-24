@@ -1,6 +1,3 @@
 User-agent: *
 Allow: /
-Sitemap: https://chaozong1983.github.io/haofeng-home/sitemap.xml
-
-User-agent: Baiduspider
-Allow: /
+Sitemap: https://haofeng.xin/sitemap.xml
